@@ -147,9 +147,6 @@ export default function HorizontalScrollProjects() {
     let ctx = gsap.context(() => {
       if (!sectionRef.current || !triggerRef.current) return;
       
-      // Only enable horizontal scroll on desktop
-      if (window.innerWidth < 768) return;
-      
       const horizontalSection = sectionRef.current;
       const scrollWidth = horizontalSection.scrollWidth;
       const windowWidth = window.innerWidth;
@@ -184,7 +181,7 @@ export default function HorizontalScrollProjects() {
 
   return (
     <div ref={triggerRef} className="relative bg-black">
-      <div className="md:h-screen flex flex-col justify-center py-12 md:py-0">
+      <div className="h-screen flex flex-col justify-center">
         {/* Header */}
         <div className="py-8 sm:py-12 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
@@ -209,16 +206,15 @@ export default function HorizontalScrollProjects() {
               </button>
             </div>
             
-            <p className="text-gray-600 text-xs hidden md:block">← Scroll to see all projects →</p>
-            <p className="text-gray-600 text-xs md:hidden">↓ Scroll to see all projects ↓</p>
+            <p className="text-gray-600 text-xs">← Scroll to see all projects →</p>
           </div>
         </div>
 
-        {/* Horizontal Scroll Container - Desktop / Vertical - Mobile */}
+        {/* Horizontal Scroll Container */}
         <div className="overflow-hidden">
           <div
             ref={sectionRef}
-            className="flex md:flex-row flex-col gap-6 sm:gap-8 px-4 sm:px-6 py-4 sm:py-8 will-change-transform"
+            className="flex gap-6 sm:gap-8 px-4 sm:px-6 py-4 sm:py-8 will-change-transform"
           >
             {projectsToShow.map((work, idx) => (
               <a 
@@ -226,7 +222,7 @@ export default function HorizontalScrollProjects() {
                 href={work.link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex-shrink-0 w-full md:w-[450px] group cursor-pointer block"
+                className="flex-shrink-0 w-[300px] sm:w-[400px] md:w-[450px] group cursor-pointer block"
               >
                 <div 
                   className={`aspect-[4/3] ${work.image.startsWith('/') ? '' : work.image} rounded-lg mb-4 sm:mb-6 overflow-hidden relative transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl`}

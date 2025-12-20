@@ -36,6 +36,18 @@ export default function HorizontalScrollProjects() {
     image: "/image%20copy%202.png",
     link: "https://profile.pakhims.com/"
   },
+
+  {
+    title: "Apni Appointments – Booking Platform",
+    description: "Appointment scheduling website",
+    details: "Developed a user-friendly booking platform for Apni Appointments, allowing users to easily schedule and manage appointments online.",
+    year: "2024",
+    image: "/image%20copy%2010.png",
+    link: "https://apniappointments.com/"
+  },
+
+
+
   {
     title: "Upward Marketing – Agency Website",
     description: "Digital agency site",

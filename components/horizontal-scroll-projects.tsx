@@ -11,144 +11,152 @@ export default function HorizontalScrollProjects() {
   const triggerRef = useRef<HTMLDivElement>(null);
   const [activeTab, setActiveTab] = useState("websites");
 
- const websiteProjects = [
-  {
-    title: "Dreams Clothing – E‑commerce Website",
-    description: "Full-stack online store",
-    details: "Built a responsive e‑commerce platform featuring a product catalogue, shopping cart, payment gateway integration, order tracking, and user accounts.",
-    year: "2025",
-    image: "/image.png",
-    link: "https://dreamsclothing.store/"
-  },
-  {
-    title: "Pakhims – Hospital Management System",
-    description: "Web‑based healthcare information system",
-    details: "Comprehensive hospital management system including patient registration, doctor scheduling, billing & insurance integration, pharmacy & lab management, and multi-branch support.",
-    year: "2025",
-    image: "/image%20copy.png",
-    link: "https://pakhims.com/"
-  },
-  {
-    title: "Pakhims – Professional Profile / Portfolio",
-    description: "Personal portfolio website",
-    details: "Portfolio-style site highlighting services, case studies, team, and contact information with clean design and user-friendly navigation.",
-    year: "2025",
-    image: "/image%20copy%202.png",
-    link: "https://profile.pakhims.com/"
-  },
+  const websiteProjects = [
+    {
+      title: "Dreams Clothing – E‑commerce Website",
+      description: "Full-stack online store",
+      details: "Built a responsive e‑commerce platform featuring a product catalogue, shopping cart, payment gateway integration, order tracking, and user accounts.",
+      year: "2025",
+      image: "/image.png",
+      link: "https://dreamsclothing.store/"
+    },
+    {
+      title: "Pakhims – Hospital Management System",
+      description: "Web‑based healthcare information system",
+      details: "Comprehensive hospital management system including patient registration, doctor scheduling, billing & insurance integration, pharmacy & lab management, and multi-branch support.",
+      year: "2025",
+      image: "/image%20copy.png",
+      link: "https://pakhims.com/"
+    },
+    {
+      title: "Pakhims – Professional Profile / Portfolio",
+      description: "Personal portfolio website",
+      details: "Portfolio-style site highlighting services, case studies, team, and contact information with clean design and user-friendly navigation.",
+      year: "2025",
+      image: "/image%20copy%202.png",
+      link: "https://profile.pakhims.com/"
+    },
 
-  {
-    title: "Apni Appointments – Booking Platform",
-    description: "Appointment scheduling website",
-    details: "Developed a user-friendly booking platform for Apni Appointments, allowing users to easily schedule and manage appointments online.",
-    year: "2024",
-    image: "/image%20copy%2010.png",
-    link: "https://apniappointments.com/"
-  },
+    {
+      title: "Apni Appointments – Booking Platform",
+      description: "Appointment scheduling website",
+      details: "Developed a user-friendly booking platform for Apni Appointments, allowing users to easily schedule and manage appointments online.",
+      year: "2024",
+      image: "/image%20copy%2010.png",
+      link: "https://apniappointments.com/"
+    },
 
 
 
-  {
-    title: "Upward Marketing – Agency Website",
-    description: "Digital agency site",
-    details: "Corporate website featuring service overview, client showcase, blog section, and lead-generation contact forms. Optimized for performance and SEO.",
-    year: "2024",
-    image: "/image%20copy%203.png",
-    link: "https://upwardmarketing.co.za/"
-  },
-  {
-    title: "Africa Homeland Safaris – Travel & Adventure",
-    description: "Tourism experience website",
-    details: "Website showcasing mobile camping safari packages, interactive gallery, itinerary breakdowns, and booking integration. Focused on immersive imagery and smooth UX.",
-    year: "2024",
-    image: "/image%20copy%204.png",
-    link: "http://homelandsafaris.com/"
-  },
+    {
+      title: "Upward Marketing – Agency Website",
+      description: "Digital agency site",
+      details: "Corporate website featuring service overview, client showcase, blog section, and lead-generation contact forms. Optimized for performance and SEO.",
+      year: "2024",
+      image: "/image%20copy%203.png",
+      link: "https://upwardmarketing.co.za/"
+    },
+    {
+      title: "Africa Homeland Safaris – Travel & Adventure",
+      description: "Tourism experience website",
+      details: "Website showcasing mobile camping safari packages, interactive gallery, itinerary breakdowns, and booking integration. Focused on immersive imagery and smooth UX.",
+      year: "2024",
+      image: "/image%20copy%204.png",
+      link: "http://homelandsafaris.com/"
+    },
 
-  {
-    title: "Africa Homeland Safaris 2.0 – second Travel Site",
-    description: "Updated tourism experience website",
-    details: "After liking for the first website showcasing mobile camping safari packages, interactive gallery, itinerary breakdowns, and booking integration. Focused on immersive imagery and smooth UX.",
-    year: "2024",
-    image: "/image%20copy%209.png",
-    link: "http://homelandsafaris.com/"
-  },
-  {
-    title: "Esabe Beauty – Online Store",
-    description: "Cosmetics and beauty products e-commerce",
-    details: "Developed a visually appealing and responsive e-commerce site for Esabe Beauty, featuring product catalog, shopping cart, secure checkout, and customer reviews.",
-    year: "2024",
-    image: "/image%20copy%205.png",
-    link: "http://esabebeauty.co.za/"
-  },
-  {
-    title: "PR Construction Project – Company Website",
-    description: "Construction company corporate site",
-    details: "Created a professional website for PR Construction showcasing company services, portfolio of projects, team members, and contact functionality for leads.",
-    year: "2024",
-    image: "/image%20copy%206.png",
-    link: "https://prconstructionproject.co.za/"
-  },
-  {
-    title: "Artistic Home Designs – Interior Design Website",
-    description: "Creative interior design portfolio",
-    details: "Designed a modern website for Artistic Home Designs featuring project galleries, client testimonials, service offerings, and interactive portfolio navigation.",
-    year: "2024",
-    image: "/image%20copy%207.png",
-    link: "https://artistic-home-designs.vercel.app/"
-  },
-  {
-    title: "Virtual Try‑On (VTO) Demo",
-    description: "Augmented‑reality web application",
-    details: "Web application enabling users to virtually try on apparel or accessories using webcam overlay. Built with WebGL/Web AR for an interactive experience.",
-    year: "2025",
-    image: "/image%20copy%208.png",
-    link: "http://vto.vercel.app/"
-  },
-];
+    {
+      title: "Africa Homeland Safaris 2.0 – second Travel Site",
+      description: "Updated tourism experience website",
+      details: "After liking for the first website showcasing mobile camping safari packages, interactive gallery, itinerary breakdowns, and booking integration. Focused on immersive imagery and smooth UX.",
+      year: "2024",
+      image: "/image%20copy%209.png",
+      link: "http://homelandsafaris.com/"
+    },
+    {
+      title: "Esabe Beauty – Online Store",
+      description: "Cosmetics and beauty products e-commerce",
+      details: "Developed a visually appealing and responsive e-commerce site for Esabe Beauty, featuring product catalog, shopping cart, secure checkout, and customer reviews.",
+      year: "2024",
+      image: "/image%20copy%205.png",
+      link: "http://esabebeauty.co.za/"
+    },
+    {
+      title: "PR Construction Project – Company Website",
+      description: "Construction company corporate site",
+      details: "Created a professional website for PR Construction showcasing company services, portfolio of projects, team members, and contact functionality for leads.",
+      year: "2024",
+      image: "/image%20copy%206.png",
+      link: "https://prconstructionproject.co.za/"
+    },
+    {
+      title: "Artistic Home Designs – Interior Design Website",
+      description: "Creative interior design portfolio",
+      details: "Designed a modern website for Artistic Home Designs featuring project galleries, client testimonials, service offerings, and interactive portfolio navigation.",
+      year: "2024",
+      image: "/image%20copy%207.png",
+      link: "https://artistic-home-designs.vercel.app/"
+    },
+    {
+      title: "Virtual Try‑On (VTO) Demo",
+      description: "Augmented‑reality web application",
+      details: "Web application enabling users to virtually try on apparel or accessories using webcam overlay. Built with WebGL/Web AR for an interactive experience.",
+      year: "2025",
+      image: "/image%20copy%208.png",
+      link: "http://vto.vercel.app/"
+    },
+  ];
 
 
 
 
   const mobileProjects = [
     {
-      title: "Employee Management App",
-      description: "React Native + Firebase",
-      details: "Mobile app for managing employee data on iOS and Android. Features include push notifications, offline sync, and responsive UI.",
+      title: "Apni Appointment",
+      description: "Online Doctor Booking App",
+      details: "Online doctor appointment booking mobile application developed using React Native. Features include doctor search, appointment scheduling, and patient management.",
       year: "2025",
-      image: "bg-gradient-to-br from-blue-600 to-cyan-600",
+      image: "/image%20copy%2014.png",
       link: "#"
     },
     {
-      title: "Task Dashboard",
-      description: "React Native + Redux",
-      details: "Cross-platform task management app with multiple task components, real-time updates, and advanced user state handling.",
+      title: "Zavvi App",
+      description: "Rewards-Based Mobile Application",
+      details: "Rewards-based mobile application offering daily and weekly incentives to users. Gamified experience with points, rewards, and user engagement features.",
       year: "2025",
-      image: "bg-gradient-to-br from-amber-600 to-yellow-600",
+      image: "/image%20copy%2015.png",
       link: "#"
     },
     {
-      title: "Fitness Tracker",
-      description: "React Native + Expo",
-      details: "Health and fitness tracking mobile app with workout logging, progress charts, and social sharing features.",
+      title: "Hourlio",
+      description: "Employee Time Management System",
+      details: "Employee time-in/time-out management system with analytics and leave submission features. Includes detailed reporting and workforce tracking.",
+      year: "2025",
+      image: "/image%20copy%2016.png",
+      link: "#"
+    },
+    {
+      title: "TapMeSaveMe",
+      description: "NFC-Based Smart Tag Solution",
+      details: "NFC-based solution for managing, tracking, and controlling smart tags. Enables contactless interactions and asset management.",
+      year: "2025",
+      image: "/image%20copy%2013.png",
+      link: "#"
+    },
+    {
+      title: "EAW (Everything At Work)",
+      description: "Enterprise Workforce Management",
+      details: "Enterprise workforce management system for performance evaluation, requests, and internal operations. Comprehensive HR and employee management solution.",
       year: "2024",
-      image: "bg-gradient-to-br from-emerald-600 to-green-600",
+      image: "/image%20copy%2011.png",
       link: "#"
     },
     {
-      title: "Food Delivery App",
-      description: "React Native + Stripe",
-      details: "Complete food delivery solution with restaurant listings, real-time order tracking, and secure payment processing.",
+      title: "Inscore",
+      description: "Sports Score Tracking App",
+      details: "Sports score-tracking application featuring groups, detailed statistics, and leaderboards. Real-time updates and competitive tracking features.",
       year: "2024",
-      image: "bg-gradient-to-br from-red-600 to-orange-600",
-      link: "#"
-    },
-    {
-      title: "Music Player",
-      description: "React Native + Audio API",
-      details: "Feature-rich music streaming app with playlists, offline mode, and personalized recommendations.",
-      year: "2023",
-      image: "bg-gradient-to-br from-violet-600 to-purple-600",
+      image: "/image%20copy%2012.png",
       link: "#"
     },
   ];
@@ -158,7 +166,7 @@ export default function HorizontalScrollProjects() {
   useEffect(() => {
     let ctx = gsap.context(() => {
       if (!sectionRef.current || !triggerRef.current) return;
-      
+
       const horizontalSection = sectionRef.current;
       const scrollWidth = horizontalSection.scrollWidth;
       const windowWidth = window.innerWidth;
@@ -202,22 +210,20 @@ export default function HorizontalScrollProjects() {
             <div className="flex gap-2 mb-6 border-b border-gray-800">
               <button
                 onClick={() => setActiveTab("websites")}
-                className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all ${
-                  activeTab === "websites" ? "text-white border-b-2 border-purple-500" : "text-gray-500 hover:text-gray-300"
-                }`}
+                className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all ${activeTab === "websites" ? "text-white border-b-2 border-purple-500" : "text-gray-500 hover:text-gray-300"
+                  }`}
               >
                 Websites
               </button>
               <button
                 onClick={() => setActiveTab("mobile")}
-                className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all ${
-                  activeTab === "mobile" ? "text-white border-b-2 border-purple-500" : "text-gray-500 hover:text-gray-300"
-                }`}
+                className={`px-4 sm:px-6 py-3 text-xs sm:text-sm font-medium transition-all ${activeTab === "mobile" ? "text-white border-b-2 border-purple-500" : "text-gray-500 hover:text-gray-300"
+                  }`}
               >
                 Mobile Apps
               </button>
             </div>
-            
+
             <p className="text-gray-600 text-xs">← Scroll to see all projects →</p>
           </div>
         </div>
@@ -229,16 +235,16 @@ export default function HorizontalScrollProjects() {
             className="flex gap-6 sm:gap-8 px-4 sm:px-6 py-4 sm:py-8 will-change-transform"
           >
             {projectsToShow.map((work, idx) => (
-              <a 
-                key={idx} 
-                href={work.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex-shrink-0 w-[300px] sm:w-[400px] md:w-[450px] group cursor-pointer block"
+              <a
+                key={idx}
+                href={work.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex-shrink-0 group cursor-pointer block ${activeTab === "mobile" ? "w-[220px] sm:w-[280px] md:w-[320px]" : "w-[300px] sm:w-[400px] md:w-[450px]"}`}
               >
-                <div 
-                  className={`aspect-[4/3] ${work.image.startsWith('/') ? '' : work.image} rounded-lg mb-4 sm:mb-6 overflow-hidden relative transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl`}
-                  style={work.image.startsWith('/') ? { backgroundImage: `url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}
+                <div
+                  className={`${activeTab === "mobile" ? "aspect-[3/4]" : "aspect-[4/3]"} ${work.image.startsWith('/') ? '' : work.image} rounded-lg mb-4 sm:mb-6 overflow-hidden relative transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl`}
+                  style={work.image.startsWith('/') ? { backgroundImage: `url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center top' } : {}}
                 >
                   {/* Project number indicator */}
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -246,15 +252,15 @@ export default function HorizontalScrollProjects() {
                       {String(idx + 1).padStart(2, '0')}
                     </span>
                   </div>
-                  
+
                   {/* Overlay on hover */}
                   <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span className="text-white text-sm font-medium">
-                        View Project
+                      View Project
                     </span>
                   </div>
                 </div>
-                
+
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-purple-400 transition-colors duration-300">{work.title}</h3>
                 <p className="text-gray-400 text-sm mb-2 font-medium">{work.description}</p>
                 <p className="text-gray-500 text-xs mb-3 leading-relaxed line-clamp-2">{work.details}</p>

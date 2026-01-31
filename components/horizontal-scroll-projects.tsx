@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -28,6 +29,17 @@ export default function HorizontalScrollProjects() {
       image: "/image%20copy.png",
       link: "https://pakhims.com/"
     },
+
+    {
+      title: "leoHours – Attendance Management System",
+      description: "Comprehensive HR & Employee Management",
+      details: "Full-featured attendance management system for both employees and HR. Includes time tracking, leave management, shift scheduling, analytics dashboard, and comprehensive reporting tools.",
+      year: "2025",
+      image: "/image%20copy%2018.png",
+      link: "https://leohours.pakhims.com/"
+    },
+
+
     {
       title: "Pakhims – Professional Profile / Portfolio",
       description: "Personal portfolio website",
@@ -128,7 +140,7 @@ export default function HorizontalScrollProjects() {
       link: "#"
     },
     {
-      title: "Hourlio",
+      title: "leoHour",
       description: "Employee Time Management System",
       details: "Employee time-in/time-out management system with analytics and leave submission features. Includes detailed reporting and workforce tracking.",
       year: "2025",
@@ -143,6 +155,17 @@ export default function HorizontalScrollProjects() {
       image: "/image%20copy%2013.png",
       link: "#"
     },
+
+    {
+      title: "Birthday Button",
+      description: "Birthday Reminder & Messaging App",
+      details: "Birthday Button helps you remember every important birthday with ease. Add birthdays, receive reminders, and send thoughtful messages with one tap. Clean, minimal design focused on meaningful connections.",
+      year: "2025",
+      image: "/image%20copy%2017.png",
+      link: "#"
+    },
+
+
     {
       title: "EAW (Everything At Work)",
       description: "Enterprise Workforce Management",
@@ -244,8 +267,21 @@ export default function HorizontalScrollProjects() {
               >
                 <div
                   className={`${activeTab === "mobile" ? "aspect-[3/4]" : "aspect-[4/3]"} ${work.image.startsWith('/') ? '' : work.image} rounded-lg mb-4 sm:mb-6 overflow-hidden relative transition-all duration-500 transform group-hover:scale-105 group-hover:shadow-2xl`}
-                  style={work.image.startsWith('/') ? { backgroundImage: `url(${work.image})`, backgroundSize: 'cover', backgroundPosition: 'center top' } : {}}
                 >
+                  {/* Optimized Image */}
+                  {work.image.startsWith('/') && (
+                    <Image
+                      src={decodeURIComponent(work.image)}
+                      alt={work.title}
+                      fill
+                      sizes={activeTab === "mobile" ? "(max-width: 640px) 220px, (max-width: 768px) 280px, 320px" : "(max-width: 640px) 300px, (max-width: 768px) 400px, 450px"}
+                      className="object-cover object-top"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMH/8QAIhAAAQMDBAMBAAAAAAAAAAAAAQIDBAAFERIxQWETIVFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADBBH/2gAMAwEAAhEDEEA/AMNQ0kZKWv6P/9k="
+                    />
+                  )}
+                  
                   {/* Project number indicator */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-6xl sm:text-9xl font-bold text-white/10 group-hover:text-white/20 transition-colors">

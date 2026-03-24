@@ -182,6 +182,30 @@ export default function HorizontalScrollProjects() {
       image: "/image%20copy%2012.png",
       link: "#"
     },
+    {
+      title: "Safety SOS – Emergency Alert App",
+      description: "Real-time emergency response and incident tracking",
+      details: "Comprehensive safety application featuring real-time SOS emergency alerts, rapid incident reporting and documentation, HIRA file management for safety compliance, camera capture for incident evidence, and dual-level admin dashboard for operations management and super admin oversight.",
+      year: "2025",
+      image: "/image%20copy%2019.png",
+      link: "#"
+    },
+    {
+      title: "Pakhims – Smart Hospital Management",
+      description: "Comprehensive hospital management mobile app",
+      details: "All-in-one hospital management system enabling seamless patient appointment scheduling, doctor management and availability, billing and invoicing, comprehensive medical reporting, and integrated healthcare services management for optimal patient care.",
+      year: "2025",
+      image: "/image%20copy%2020.png",
+      link: "#"
+    },
+    {
+      title: "Clear – Mental Fitness App",
+      description: "Mental wellness and mindfulness application",
+      details: "Mental fitness app featuring guided reflection sessions, curated reading materials, breathing exercises, meditation modules, wellness management tools, and holistic mental health support for improved emotional well-being.",
+      year: "2025",
+      image: "/image%20copy%2021.png",
+      link: "#"
+    },
   ];
 
   const projectsToShow = activeTab === "websites" ? websiteProjects : mobileProjects;

@@ -129,7 +129,7 @@ export default function HorizontalScrollProjects() {
       details: "Online doctor appointment booking mobile application developed using React Native. Features include doctor search, appointment scheduling, and patient management.",
       year: "2025",
       image: "/image%20copy%2014.png",
-      link: "#"
+      link: "https://play.google.com/store/apps/details?id=com.apniappointment.app"
     },
     {
       title: "Zavvi App",
@@ -145,7 +145,7 @@ export default function HorizontalScrollProjects() {
       details: "Employee time-in/time-out management system with analytics and leave submission features. Includes detailed reporting and workforce tracking.",
       year: "2025",
       image: "/image%20copy%2016.png",
-      link: "#"
+      link: "https://play.google.com/store/apps/details?id=com.leohours.app"
     },
     {
       title: "TapMeSaveMe",
@@ -153,7 +153,7 @@ export default function HorizontalScrollProjects() {
       details: "NFC-based solution for managing, tracking, and controlling smart tags. Enables contactless interactions and asset management.",
       year: "2025",
       image: "/image%20copy%2013.png",
-      link: "#"
+      link: "https://play.google.com/store/apps/details?id=com.tapmesaveme.app"
     },
 
     {
@@ -162,7 +162,7 @@ export default function HorizontalScrollProjects() {
       details: "Birthday Button helps you remember every important birthday with ease. Add birthdays, receive reminders, and send thoughtful messages with one tap. Clean, minimal design focused on meaningful connections.",
       year: "2025",
       image: "/image%20copy%2017.png",
-      link: "#"
+      link: "https://play.google.com/store/apps/details?id=com.birthdaybutton.app"
     },
 
 
@@ -172,7 +172,7 @@ export default function HorizontalScrollProjects() {
       details: "Enterprise workforce management system for performance evaluation, requests, and internal operations. Comprehensive HR and employee management solution.",
       year: "2024",
       image: "/image%20copy%2011.png",
-      link: "#"
+      link: ""
     },
     {
       title: "Inscore",
@@ -196,7 +196,7 @@ export default function HorizontalScrollProjects() {
       details: "All-in-one hospital management system enabling seamless patient appointment scheduling, doctor management and availability, billing and invoicing, comprehensive medical reporting, and integrated healthcare services management for optimal patient care.",
       year: "2025",
       image: "/image%20copy%2020.png",
-      link: "#"
+      link: "https://play.google.com/store/apps/details?id=com.mumerch.pakhims"
     },
     {
       title: "Clear – Mental Fitness App",
